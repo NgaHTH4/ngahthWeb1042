@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | View Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="row mb header">
+        <div class="title">
+            <h1> SIÊU THỊ TRỰC TUYẾN</h1>
+        </div>
+
+        <div class="giohang">
+            <a href="index.html"><img src="images/cart.png"><span id="countsp">0</span></a>
+        </div>
+    </div>
+    <div class="box"></div>
+    <div class="boxcenter">
+        <div class="row mb menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="boxtrai mr">
+                <div class="row mb">
+                    <!-- <h1>GIỎ HÀNG</h1> -->
+                    <table>
+                        <tr>
+                            <th>STT</th>
+                            <th>Hình</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền ($)</th>
+                        </tr>
+                        <tbody id="mycart">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <h1>THÔNG TIN NHẬN HÀNG</h1>
+                    <table class="thongtinnhanhang">
+                        <tr>
+                            <td width="20%">Họ tên</td>
+                            <td><input type="text" name="hoten"></td>
+                        </tr>
+                        <tr>
+                            <td>Địa chỉ</td>
+                            <td><input type="text" name="diachi"></td>
+                        </tr>
+                        <tr>
+                            <td>Điện thoại</td>
+                            <td><input type="text" name="dienthoai"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" name="email"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row mb">
+                    <button class="dongy">ĐỒNG Ý ĐẶT HÀNG</button>
+                </div>
+
+            </div>
+            <div class="boxphai">
+                <div class="row mb ">
+                    <div class="boxtitle">TÀI KHOẢN</div>
+                    <div class="boxcontent formtaikhoan">
+                        <form action="#" method="post">
+                            <div class="row mb10">
+                                Tên đăng nhập<br>
+                                <input type="text" name="user">
+                            </div>
+                            <div class="row mb10">
+                                Mật khẩu<br>
+                                <input type="password" name="pass">
+                            </div>
+                            <div class="row mb10">
+                                <input type="checkbox" name=""> Ghi nhớ tài khoản?</div>
+                            <div class="row mb10">
+                                <input type="submit" value="Đăng nhập">
+                            </div>
+                        </form>
+                        <li>
+                            <a href="#">Quên mật khẩu</a>
+                        </li>
+                        <li>
+                            <a href="#">Đăng ký thành viên</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="boxtitle">DANH MỤC</div>
+                    <div class="boxcontent2 menudoc">
+                        <ul>
+                            <li>
+                                <a href="#">Các loại củ</a>
+                            </li>
+                            <li>
+                                <a href="#">Các loại quả</a>
+                            </li>
+                            <li>
+                                <a href="#">Rau lấy bông</a>
+                            </li>
+                            <li>
+                                <a href="#">Các loại xà lách</a>
+                            </li>
+                            <li>
+                                <a href="#">Rau gia vị - ăn sống</a>
+                            </li>
+                            <li>
+                                <a href="#">Các loại cải</a>
+                            </li>
+                            <li>
+                                <a href="#">Các loại nấm</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="boxfooter searbox">
+                        <form action="#" method="post">
+                            <input type="text" name="" id="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb footer">
+            Cao đẳng FPT Polytechnic Hồ Chí Minh
+        </div>
+    </div>
+    <script src="js/cart.js"></script>
+    <script>
+        showcountsp();
+        laydon();
+    </script>
+</body>
+
+</html>

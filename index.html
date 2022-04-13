@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadAnh();">
+    <div class="row mb header">
+        <div class="title">
+            <h1> SIÊU THỊ TRỰC TUYẾN</h1>
+        </div>
+        <div class="giohang">
+            <a href="cart.html"><img src="images/cart.png"><span id="countsp">0</span></a>
+        </div>
+        <div id="showcart">
+            <table>
+                <tr>
+                    <th>STT</th>
+                    <th>Hình</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền ($)</th>
+                </tr>
+                <tbody id="mycart">
+
+                </tbody>
+                <tr>
+                    <td><a href="thanhtoan.html"><button type="button" class="thanhtoan">Chốt đơn & Thanh toán</button></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="banner">
+        <input id="back" type="button" value="back" onclick="back();" />
+        <input id="next" type="button" value="next" onclick="next();" />
+        <img id="hoa" src="images/hoa1.jpg" alt="">
+        <p id="vitri">1/15</p>
+    </div>
+    <div class="boxcenter">
+        <div class="row mb menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="boxtrai mr">
+                <div class="row">
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/rau1.jpg" alt=""></div>
+                        <p>$<span>10</span></p>
+                        <a href="#">CÀ RỐT DALAT</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/rau2.jpg" alt=""></div>
+                        <p>$<span>20</span></p>
+                        <a href="#">DƯA LEO</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp ">
+                        <div class="row img"><img src="images/rau3.jpg" alt=""></div>
+                        <p>$<span>30</span></p>
+                        <a href="#">CÀ CHUA</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/rau4.jpg" alt=""></div>
+                        <p>$<span>40</span></p>
+                        <a href="#">BÍ NỤ</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/rau5.jpg" alt=""></div>
+                        <p>$<span>50</span></p>
+                        <a href="#">BÔNG THIÊN LÝ</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp ">
+                        <div class="row img"><img src="images/rau6.jpg" alt=""></div>
+                        <p>$<span>60</span></p>
+                        <a href="#">XÀ LÁCH LÔ LÔ TÍM</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/rau7.jpg" alt=""></div>
+                        <p>$<span>70</span></p>
+                        <a href="#">XÀ LÁCH LO LO XANH</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/rau8.jpg" alt=""></div>
+                        <p>$<span>80</span></p>
+                        <a href="#">XÀ LÁCH RADICHIO</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                    <div class="boxsp ">
+                        <div class="row img"><img src="images/rau9.jpg" alt=""></div>
+                        <p>$<span>90</span></p>
+                        <a href="#">RAU DIẾP CÁ</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                </div>
+            </div>
+            <div class="boxphai">
+                <div class="row mb ">
+                    <div class="boxtitle">TÀI KHOẢN</div>
+                    <div class="boxcontent formtaikhoan">
+                        <form action="#" method="post">
+                            <div class="row mb10">
+                                Tên đăng nhập<br>
+                                <input type="text" name="user">
+                            </div>
+                            <div class="row mb10">
+                                Mật khẩu<br>
+
+                                <input type="password" name="pass">
+                            </div>
+                            <div class="row mb10">
+                                <input type="checkbox" name=""> Ghi nhớ tài khoản?</div>
+                            <div class="row mb10">
+                                <input type="submit" value="Đăng nhập">
+                            </div>
+                        </form>
+                        <li>
+                            <a href="#">Quên mật khẩu</a>
+                        </li>
+                        <li>
+                            <a href="#">Đăng ký thành viên</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="boxtitle">DANH MỤC</div>
+                    <div class="boxcontent2 menudoc">
+                        <ul>
+                            <li>
+                                <a href="#">Các loại củ</a>
+                            </li>
+                            <li>
+                                <a href="#">Các loại quả</a>
+                            </li>
+                            <li>
+                                <a href="#">Rau lấy bông</a>
+                            </li>
+                            <li>
+                                <a href="#">Các loại xà lách</a>
+                            </li>
+                            <li>
+                                <a href="#">Rau gia vị - ăn sống</a>
+                            </li>
+                            <li>
+                                <a href="#">Các loại cải</a>
+                            </li>
+                            <li>
+                                <a href="#">Các loại nấm</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="boxfooter searbox">
+                        <form action="#" method="post">
+                            <input type="text" name="" id="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb footer">
+            Cao đẳng FPT Polytechnic Hồ Chí Minh
+        </div>
+    </div>
+    <script src="cart.js"></script>
+    <script src="slideshow.js"></script>
+    <script>
+        document.getElementById("showcart").style.display = "none";
+        showcountsp();
+    </script>
+</body>
+
+</html>
